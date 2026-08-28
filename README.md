@@ -1,12 +1,14 @@
-# Vital Research Council
+# 🛡️ Vital Research Council
 
-A process check for high-stakes research. Not a third model vote.
+💜 A process check for high-stakes research. Not a third model vote.
 
 The council sits when James or Rose flags a brief as vital: medical, legal, money, or safety. Everyday lookups stay with the investigator. Same-family model agreement is never a source.
 
-This repo is the operating manual. The public roster also lives on [The Fleet](https://port0.me/fleet). The look matches [phipi.me](https://phipi.me): dark ground, purple accent, white type.
+This repo is the operating manual. The public roster also lives on [The Fleet](https://port0.me/fleet). The look matches [phipi.me](https://phipi.me): dark ground, purple, cyan, gold.
 
-## Purpose
+`#VitalResearch` `#Council` `#Quorum` `#Dissent` `#CERTIFIED` `#phipi`
+
+## 🎯 Purpose
 
 The council exists to keep a vital claim from shipping on one source, one draft, or a pile of agreeing language models.
 
@@ -18,7 +20,7 @@ It does three things:
 
 It does not write doses, invent lab numbers, or produce exploit steps. Lane owners keep those locks.
 
-## When it sits
+## ⏰ When it sits
 
 Wake the council only if James or Rose marks the brief vital.
 
@@ -26,7 +28,7 @@ Do not sit for ordinary Cynda lookups, daily intel, or a question that can wait 
 
 Do not fan out "meanwhile." If Ginger or Sophia is missing, do not fake their seats. Run the investigator only, label the brief `UNCERTIFIED`, and stop.
 
-## Seats
+## 👤 Seats
 
 | Seat | Who | Title | Job |
 | --- | --- | --- | --- |
@@ -37,7 +39,16 @@ Do not fan out "meanwhile." If Ginger or Sophia is missing, do not fake their se
 
 Room: the Council channel (Rose, Cynda, Ginger, Sophia).
 
-### Lane locks
+### Portraits
+
+| | Seat |
+| --- | --- |
+| ![Rose](avatars/rose.jpg) | **Rose** - chair / overseer |
+| ![Cynda](avatars/cynda.jpg) | **Cynda** - investigator |
+| ![Ginger](avatars/ginger.jpg) | **Ginger** - auditor |
+| ![Sophia](avatars/sophia.jpg) | **Sophia** - clerk |
+
+### 🔐 Lane locks
 
 The council checks sources. It does not take over a locked lane.
 
@@ -46,7 +57,7 @@ The council checks sources. It does not take over a locked lane.
 
 If medical figures appear, send them to Katrina. If cyber artifacts appear, send them to Sarah. The council does not invent those values.
 
-## Quorum
+## 🗳️ Quorum
 
 A claim is **PASS** only if both are true:
 
@@ -71,18 +82,18 @@ Never count as a source:
 
 Process check, not consensus theater. Two models agreeing is not two sources.
 
-## Operations
+## ⚙️ Operations
 
 Work moves in one direction: investigator, then auditor, then clerk, then chair.
 
-### 1. Investigator
+### 🔎 1. Investigator
 
 1. State the claim in one sentence.
 2. Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources.
 3. Draft short. Lead with the answer. Flag anything unverified.
 4. Hand the draft plus the raw source list to Ginger. Do not coach the conclusion.
 
-### 2. Auditor (Ginger)
+### ⚖️ 2. Auditor (Ginger)
 
 1. Search with different terms. Do not reuse the investigator's query list.
 2. Try to break each claim.
@@ -93,7 +104,7 @@ Work moves in one direction: investigator, then auditor, then clerk, then chair.
 
 Ginger and the investigator do not share scratch until merge. The dissent has to be a real second search.
 
-### 3. Clerk (Sophia)
+### 📋 3. Clerk (Sophia)
 
 1. Build the table: claim / source A / source B / auditor / PASS or HOLD.
 2. Release only PASS claims. HOLD stays HOLD.
@@ -101,11 +112,11 @@ Ginger and the investigator do not share scratch until merge. The dissent has to
 
 Sophia does not research. She applies the rule.
 
-### 4. Chair (Rose)
+### 🛡️ 4. Chair (Rose)
 
 Rose certifies that the seats ran and the table is complete. She does not rewrite the brief to make a HOLD look like a PASS.
 
-## Output labels
+## 🏷️ Output labels
 
 | Label | Meaning |
 | --- | --- |
@@ -115,7 +126,7 @@ Rose certifies that the seats ran and the table is complete. She does not rewrit
 
 A certified note is the only public-facing product of a sitting. It is the table plus one paragraph. Nothing else gets invented to fill space.
 
-## What the council will not do
+## 🚫 What the council will not do
 
 - Sit on ordinary lookups
 - Treat LLM consensus as evidence
@@ -125,12 +136,13 @@ A certified note is the only public-facing product of a sitting. It is the table
 - Let the chair override a HOLD
 - Invent auditor or clerk votes when those seats are empty
 
-## Related
+## 🔗 Related
 
 - Public roster: [port0.me/fleet](https://port0.me/fleet)
 - Home: [phipi.me](https://phipi.me)
 - Rendered manual: [index.html](index.html) (phipi.me theme)
 
-## Changelog
+## 📝 Changelog
 
+- 2026-08-28 - Color, emojis, hashtags, and council portraits.
 - 2026-08-28 - First commit. Seats, quorum, and operating steps as currently run.
