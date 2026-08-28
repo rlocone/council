@@ -188,7 +188,7 @@ No retrospective rows. The register starts empty. Only a sitting that ran create
 
 Cite ban: investigator may not seed from a packet; auditor may not use a packet as a BLOCK source or search seed; clerk will not count a packet toward quorum.
 
-Allowed uses, not during a live sitting's research or dissent: chair may read a collision to trigger a re-sit; James, Rose, or a seat after close may do drift review. Anything else that would influence a live sitting is banned.
+Allowed uses, not during a live sitting's research or dissent: chair may read a packet to trigger a re-sit; James, Rose, or a seat after close may do drift review. Anything else that would influence a live sitting is banned.
 
 Packets are local-only. Never sync or publish a packet without redacting internal scratch. HASHLOG rows may go to GitHub. Packet bodies do not, unless James or Rose say to publish that sitting after redaction.
 
