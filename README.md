@@ -105,7 +105,7 @@ Work moves in one direction: investigator, then auditor, then clerk, then chair.
 ### 🔎 1. Investigator
 
 1. State each claim in one sentence.
-2. Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources. Trace origin so two reprints of one wire are not two sources.
+2. Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources. Trace origin so two reprints of one wire are not two sources. Do not seed from a register packet.
 3. Draft short. Lead with the answer. Flag anything unverified.
 4. Keep a private origin-and-discard note for merge (what was pulled, origin of each, what was dropped and why). Do not show it to Ginger.
 5. Hand Ginger the claim sentences and the draft only. Withhold the source list until merge. Do not coach the conclusion.
@@ -115,7 +115,7 @@ Work moves in one direction: investigator, then auditor, then clerk, then chair.
 1. Search with different terms. Do not reuse the investigator's query list. Do not see the investigator's source list until after you file. Do not read prior register packets as search seed (poisoning the well).
 2. Try to break each claim.
 3. File one of:
-   - `BLOCK` — claim, why, and a source
+   - `BLOCK` — claim, why, and a source that is not a register packet
    - `CANNOT CORROBORATE` — claim and why; no source required
    - `NO FINDING` — queries run and what would have counted as a block ("I searched X, Y; a contradiction would have been Z")
 4. File the queries with the filing. The Council message time is the timestamp.
@@ -129,11 +129,11 @@ Ginger and the investigator do not share scratch until merge. The dissent has to
 
 ### 📋 3. Clerk (Sophia)
 
-1. Table every claim, including HOLDs: claim sentence / source A (origin) / source B (origin) / does each source as written support this sentence / auditor filing / PASS or HOLD.
+1. Table every claim, including HOLDs: claim sentence / source A (origin) / source B (origin) / does each source as written support this sentence / auditor filing / PASS or HOLD. Do not count a register packet toward quorum.
 2. Assemble the derivation log from those artifacts. Do not add research or model inner monologue.
 3. A certified note that omits any HOLD claim or the derivation log is invalid and `UNCERTIFIED`.
 4. Release only PASS claims as answers. HOLD stays HOLD. The certified note is the full table, the derivation log, and a one-paragraph recap. No extra taxonomy.
-5. After the sitting closes, file the register packet and add a row to the index.
+5. After the sitting closes, write the packet, sha256 it, append one INDEX row and one HASHLOG row. Never edit a prior row.
 
 Sophia does not research. She applies the rule.
 
@@ -168,18 +168,29 @@ Per claim, in this order:
 
 Never put in the log: private model scratch, "I thought that…", another Grok's agreement, or anyone else's chat body. The log is the artifacts in order. LLM reasoning is not a source and not a step.
 
-## 🗄️ Register (archive)
+## 🦣 Register (archive)
 
-Internal ledger of sittings. Not a source. Not a Gloria post. Not the public council page. Not Ginger's search seed.
+The archive is an output of sittings, never an input to one.
 
-Packets are stored on the council computer, not in this public repo:
+Internal ledger. Not a source. Not a Gloria post. Packets are local-only.
+
+Packets stay on the council computer:
 
 `/home/box/agent-data/workflows/vital-research-council/register/`
 
-- `INDEX.md` — date (America/New_York), subject, label, PASS count, HOLD count, packet filename
+- `INDEX.md` — date (America/New_York), subject, label, PASS count, HOLD count, packet filename, sha256
+- `HASHLOG.md` — append-only tamper log: date, filename, sha256, label. No claim text. This file may live on the council repo.
 - `sittings/YYYY-MM-DD-slug.md` — labels, claim table, derivation log, artifact checklist, one-paragraph recap
 
-File CERTIFIED, HOLD, and UNCERTIFIED sittings. A prior packet does not satisfy quorum and does not refresh a stale CERTIFIED label. Do not put health numbers, street addresses, tokens, secrets, or chat bodies in a packet. Do not publish a packet unless James or Rose say to.
+File CERTIFIED, HOLD, and UNCERTIFIED sittings. At write time, hash the packet, then append one INDEX row and one HASHLOG row. Never edit a prior row.
+
+No retrospective rows. The register starts empty. Only a sitting that ran creates a row. The 2026-08-27 ITDRC HOLD is not backfilled; that verdict stands only in the original Council conversation. Do not assume this register is complete from day one.
+
+Cite ban: investigator may not seed from a packet; auditor may not use a packet as a BLOCK source or search seed; clerk will not count a packet toward quorum.
+
+Allowed uses, not during a live sitting's research or dissent: chair may read a packet to trigger a re-sit; James, Rose, or a seat after close may do drift review. Anything else that would influence a live sitting is banned.
+
+Packets are local-only. Never sync or publish a packet without redacting internal scratch. HASHLOG rows may go to GitHub. Packet bodies do not, unless James or Rose say to publish that sitting after redaction.
 
 ## 🚫 What the council will not do
 
@@ -204,9 +215,11 @@ File CERTIFIED, HOLD, and UNCERTIFIED sittings. A prior packet does not satisfy 
 - Home: [phipi.me](https://phipi.me)
 - Rendered manual: [index.html](index.html) (phipi.me theme)
 - Source README: [github.com/rlocone/council/blob/main/README.md](https://github.com/rlocone/council/blob/main/README.md)
+- Hash log: [HASHLOG.md](HASHLOG.md)
 
 ## 📝 Changelog
 
+- 2026-08-28 - Register amendment: sha256 at write, HASHLOG on repo, cite-ban on all three seats, no retrospective rows, allowed uses (re-sit / drift), packets local-only.
 - 2026-08-28 - Register: internal archive of sittings (INDEX + packets). Not a source. Not Ginger's search seed.
 - 2026-08-28 - Derivation log (train of thought): per-claim artifact trail assembled at merge. Required for CERTIFIED. Not a vote, not model inner monologue.
 - 2026-08-28 - Protocol patches: independent origin, 5-year medical/regulatory freshness, withheld source list, NO FINDING effort bar, escalation duty, full-table notes, artifact certification, dated CERTIFIED labels, sentence-level mapping, CANNOT CORROBORATE, lane-owner data as one source.
