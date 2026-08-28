@@ -168,7 +168,7 @@ Per claim, in this order:
 
 Never put in the log: private model scratch, "I thought that…", another Grok's agreement, or anyone else's chat body. The log is the artifacts in order. LLM reasoning is not a source and not a step.
 
-## 🗄️ Register (archive)
+## 🧨 Register (archive)
 
 Internal ledger of sittings. Not a source. Not a Gloria post. Not the public council page. Not Ginger's search seed.
 
