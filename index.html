@@ -145,6 +145,7 @@
       border-top: 1px solid rgba(192,132,252,0.4);
     }
   </style>
+
 </head>
 <body>
   <header>
@@ -162,12 +163,29 @@
       <span>#phipi</span>
     </div>
     <div class="nav">
-      <a href="https://phipi.me">🏠 phipi.me</a>
+      <a href="https://phipi.me/">🏠 phipi.me</a>
       <a href="https://port0.me/fleet">👥 The Fleet</a>
       <a href="https://github.com/rlocone/council">💻 GitHub</a>
     </div>
   </header>
   <main>
+    <section>
+      <h2>🎯 Purpose</h2>
+      <p>The council exists to keep a vital claim from shipping on one source, one draft, or a pile of agreeing language models. Same-family model agreement is never a source.</p>
+      <ol>
+        <li>📥 Pull primary or official sources and date them.</li>
+        <li>🧨 Force an independent dissent pass.</li>
+        <li>✅ Apply a written quorum so a claim is PASS or HOLD, never &ldquo;probably.&rdquo;</li>
+      </ol>
+      <p>It does not write doses, invent lab numbers, or produce exploit steps. Lane owners keep those locks.</p>
+    </section>
+    <section>
+      <h2>⏰ When it sits</h2>
+      <p>James or Rose can flag a brief vital.</p>
+      <p>Escalation duty: any seat that sees a medical, legal, money, or safety claim about to ship as an answer must mark the brief vital and sit the council, even if James or Rose did not flag it. Escalation is stop-and-sit. It is not a fan-out, and it is not a wake on every passing mention (a job-posting salary stays with Adriana; a CVE stays with Sarah).</p>
+      <p>Do not sit for ordinary lookups, daily intel, or a question that can wait on one investigator.</p>
+      <p>Do not fan out &ldquo;meanwhile.&rdquo; If Ginger or Sophia is missing, do not fake their seats. Run the investigator only, label the brief <code>UNCERTIFIED</code>, and stop.</p>
+    </section>
     <section>
       <h2>👤 Seats</h2>
       <div class="grid">
@@ -202,41 +220,28 @@
       </div>
     </section>
     <section>
-      <h2>🎯 Purpose</h2>
-      <p>The council sits when James or Rose flags a brief as vital, or when any seat escalates a medical, legal, money, or safety claim that is about to ship. Everyday lookups stay with the investigator. Same-family model agreement is never a source.</p>
-      <p>It exists to keep a vital claim from shipping on one source, one draft, or a pile of agreeing language models.</p>
-      <ol>
-        <li>📥 Pull primary or official sources and date them.</li>
-        <li>🧨 Force an independent dissent pass.</li>
-        <li>✅ Apply a written quorum so a claim is PASS or HOLD, never &ldquo;probably.&rdquo;</li>
-      </ol>
-      <p>It does not write doses, invent lab numbers, or produce exploit steps. Lane owners keep those locks.</p>
-    </section>
-    <section>
-      <h2>⏰ When it sits</h2>
-      <p>James or Rose can flag a brief vital. Any seat that sees a medical, legal, money, or safety claim about to ship must escalate: stop the ordinary path and sit the council. That is not a fan-out, and it is not a wake on every passing mention.</p>
-      <p>Do not fan out &ldquo;meanwhile.&rdquo; If Ginger or Sophia is missing, do not fake their seats. Run the investigator only, label the brief <code>UNCERTIFIED</code>, and stop.</p>
-    </section>
-    <section>
       <h2>🔐 Lane locks</h2>
       <ul>
         <li>🩺 Katrina owns health numbers.</li>
         <li>🛡️ Sarah owns CVE and IoC work.</li>
       </ul>
       <p>If medical figures appear, send them to Katrina. If cyber artifacts appear, send them to Sarah. The council does not invent those values.</p>
+      <p>Lane-owner data counts as one source. Katrina&rsquo;s number or Sarah&rsquo;s CVE still needs a second independent primary. It does not complete quorum alone.</p>
     </section>
     <section>
       <h2>🗳️ Quorum</h2>
       <p>A claim is <strong>PASS</strong> only if all of these are true:</p>
       <ol>
-        <li>Two independent primary or official sources agree on the exact claim sentence. Different publishers. Not two pages of the same organization.</li>
-        <li>Each source traces to an independent origin. Two reprints of one wire, press release, or letter count as one source.</li>
+        <li>Two independent primary or official sources agree on the exact claim sentence, not topic-level agreement. Different publishers. Not two pages of the same organization.</li>
+        <li>Each source traces to an independent origin. If both cite the same underlying document, press release, wire, or letter, count as one source.</li>
         <li>Ginger files no <code>BLOCK</code> and no <code>CANNOT CORROBORATE</code>.</li>
       </ol>
       <p>Otherwise the claim is <strong>HOLD</strong>: one primary, same-upstream pair, a conflict, a missing date, a stale source without a currency check, a block, or cannot-corroborate.</p>
       <p>Never count as a source: another Grok, a Grok variant, the investigator&rsquo;s own draft, a secondary recap of a primary already used, or a prior register packet.</p>
-      <p>Lane-owner data (Katrina health numbers, Sarah CVE/IoC) counts as one source. It still needs a second independent primary.</p>
-      <p>For medical, regulatory, or living legal status, a source older than 5 years needs an explicit currency check. Historical facts may use contemporaneous records.</p>
+      <h3>Freshness</h3>
+      <p>Date every source. The source date must postdate the last material change of the subject.</p>
+      <p>For medical, regulatory, or living legal status, a source older than 5 years requires an explicit currency check (still posted, not superseded, not withdrawn). Fail that check and the source does not count.</p>
+      <p>Historical facts (when an org was founded, what a filing said for a named year) may use contemporaneous or later official records. The 5-year rule is for living status, not the past event itself.</p>
     </section>
     <section>
       <h2>⚙️ Operations</h2>
@@ -244,7 +249,7 @@
       <h3>🔎 1. Investigator</h3>
       <ol>
         <li>State each claim in one sentence.</li>
-        <li>Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources. Trace origin.</li>
+        <li>Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources. Trace origin. Do not seed from a register packet.</li>
         <li>Draft short. Lead with the answer. Flag anything unverified.</li>
         <li>Keep a private origin-and-discard note for merge. Do not show it to Ginger.</li>
         <li>Hand Ginger the claim sentences and the draft only. Withhold the source list until merge. Do not coach the conclusion.</li>
@@ -253,18 +258,21 @@
       <ol>
         <li>Search with different terms. Do not reuse the investigator&rsquo;s query list. Do not see the source list until after you file. Do not read prior register packets as search seed.</li>
         <li>Try to break each claim.</li>
-        <li>File <code>BLOCK</code> (claim, why, source), <code>CANNOT CORROBORATE</code> (claim, why; no source required), or <code>NO FINDING</code> (queries run plus what would have counted as a block).</li>
+        <li>File <code>BLOCK</code> (claim, why, a source that is not a register packet), <code>CANNOT CORROBORATE</code> (claim, why; no source required), or <code>NO FINDING</code> (queries run plus what would have counted as a block).</li>
+        <li>Post the filing to the Council channel <em>before</em> Sophia posts merge artifacts. The channel timestamp is the filing time.</li>
         <li>Do not replace Katrina. If numbers appear, send them to her.</li>
       </ol>
+      <p>Ginger does not run a second search after seeing the source list.</p>
       <h3>📋 3. Clerk (Sophia)</h3>
       <ol>
-        <li>Table every claim, including HOLDs: claim sentence / source A (origin) / source B (origin) / sentence support / auditor / PASS or HOLD.</li>
+        <li>Wait until Ginger&rsquo;s filing is already in the channel. Then table every claim, including HOLDs. Do not count a register packet toward quorum.</li>
         <li>Assemble the derivation log from artifacts. Do not add research or inner monologue.</li>
         <li>A note that omits a HOLD claim or the derivation log is invalid and <code>UNCERTIFIED</code>.</li>
         <li>Release only PASS claims as answers. HOLD stays HOLD. Certified note is the full table, the derivation log, and a one-paragraph recap.</li>
+        <li>After the sitting closes, write the packet, sha256 it, append one INDEX row and one HASHLOG row. Never edit a prior row.</li>
       </ol>
       <h3>🛡️ 4. Chair (Rose)</h3>
-      <p>Rose certifies against artifacts: Ginger&rsquo;s filing, Sophia&rsquo;s full table, and the derivation log. Missing any artifact is <code>UNCERTIFIED</code>. She does not rewrite the brief to make a HOLD look like a PASS.</p>
+      <p>Rose certifies against artifacts: Ginger&rsquo;s filing, Sophia&rsquo;s full table, and the derivation log. She confirms the auditor filing timestamp precedes the merge message. Missing any artifact, or a merge that predates the filing, is <code>UNCERTIFIED</code>. She does not rewrite the brief to make a HOLD look like a PASS.</p>
     </section>
     <section>
       <h2>🧠 Derivation log</h2>
@@ -274,15 +282,16 @@
         <li>Investigator path — sources, dates, origin of each, what was discarded and why.</li>
         <li>Auditor path — queries, filing, what would have counted as a block.</li>
         <li>Clerk path — does each source as written support this sentence; origin and freshness checks.</li>
-        <li>Chair path — artifacts present: yes or no.</li>
+        <li>Chair path — artifacts present: yes or no. Filing timestamp precedes the merge message: yes or no.</li>
         <li>Verdict — PASS, HOLD, or UNCERTIFIED.</li>
       </ol>
       <p>No private model scratch. No &ldquo;I thought that.&rdquo; LLM reasoning is not a source and not a step.</p>
     </section>
     <section>
-      <h2>🗄️ Register</h2>
+      <h2>🧨 Register</h2>
       <p>The archive is an output of sittings, never an input to one.</p>
       <p>Packets are local-only. File CERTIFIED, HOLD, and UNCERTIFIED after the sitting closes. Hash the packet (sha256) at write time. Append one index row and one <code>HASHLOG.md</code> row. Never edit a prior row. No retrospective rows. The 2026-08-27 ITDRC HOLD is not in this register.</p>
+      <p>A HASHLOG row is verifiable only when the packet is disclosed.</p>
       <p>Cite ban: investigator does not seed from a packet; auditor does not use a packet as a <code>BLOCK</code> source; clerk does not count a packet toward quorum.</p>
       <p>Allowed uses: chair may read a packet to trigger a re-sit; after close, drift review. Not during a live sitting&rsquo;s research or dissent.</p>
       <p>Never sync or publish a packet without redacting internal scratch. The hash log may live on the repo. Packet bodies do not.</p>
@@ -292,8 +301,8 @@
       <table>
         <thead><tr><th>Label</th><th>Meaning</th></tr></thead>
         <tbody>
-          <tr><td><code>CERTIFIED (YYYY-MM-DD)</code></td><td>Quorum met. Chair signed against artifacts. Date is America/New_York. Re-sit if a source goes stale or a link dies.</td></tr>
-          <tr><td><code>UNCERTIFIED</code></td><td>A seat was missing, process skipped, HOLD claims omitted, derivation log missing, or artifacts missing.</td></tr>
+          <tr><td><code>CERTIFIED (YYYY-MM-DD)</code></td><td>Quorum met. Chair signed against artifacts, including that the filing timestamp precedes merge. Date is America/New_York. Re-sit if a source goes stale or a link dies.</td></tr>
+          <tr><td><code>UNCERTIFIED</code></td><td>A seat was missing, process skipped, HOLD claims omitted, derivation log missing, artifacts missing, or merge predates the auditor filing.</td></tr>
           <tr><td><code>HOLD</code></td><td>Conflict, single source, same-upstream pair, missing date, stale source, block, or cannot-corroborate.</td></tr>
         </tbody>
       </table>
@@ -301,17 +310,21 @@
     <section>
       <h2>🚫 What the council will not do</h2>
       <ul>
-        <li>Sit on ordinary lookups</li>
+        <li>Sit on ordinary lookups (unless escalation duty fires)</li>
         <li>Treat LLM consensus as evidence</li>
         <li>Invent numbers, quotes, or citations</li>
         <li>Bypass Katrina on health numbers</li>
         <li>Bypass Sarah on cyber IoCs</li>
         <li>Let the chair override a HOLD</li>
         <li>Invent auditor or clerk votes when those seats are empty</li>
+        <li>Hand Ginger the source list before she files</li>
+        <li>Let Sophia post merge artifacts before Ginger&rsquo;s filing is in the channel</li>
+        <li>Ship a note that hides HOLD claims</li>
         <li>Ship a note without a derivation log</li>
         <li>Treat the derivation log as a vote or as model inner monologue</li>
         <li>Cite a register packet as a source</li>
         <li>Hand Ginger a prior packet as search seed</li>
+        <li>Publish a packet unless James or Rose say to</li>
       </ul>
     </section>
   </main>

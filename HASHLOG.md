@@ -1,6 +1,6 @@
 # Council register hash log
 
-Append-only. Tamper-evidence for packets that stay local.
+Append-only. Tamper-evidence for packets that stay local. A HASHLOG row is verifiable only when the packet is disclosed.
 
 One row per sitting that ran. Never edit a prior row. No claim text. No packet body.
 

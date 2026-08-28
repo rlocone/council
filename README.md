@@ -4,7 +4,7 @@
 
 The council sits when James or Rose flags a brief as vital, or when any seat escalates a medical, legal, money, or safety claim that is about to ship. Everyday lookups stay with the investigator. Same-family model agreement is never a source.
 
-This repo is the operating manual. The public roster also lives on [The Fleet](https://port0.me/fleet). The look matches [phipi.me](https://phipi.me): dark ground, purple, cyan, gold.
+This repo is the operating manual. The public roster also lives on [The Fleet](https://port0.me/fleet). The look matches [phipi.me](https://phipi.me/): dark ground, purple, cyan, gold.
 
 `#VitalResearch` `#Council` `#Quorum` `#Dissent` `#CERTIFIED` `#phipi`
 
@@ -118,18 +118,18 @@ Work moves in one direction: investigator, then auditor, then clerk, then chair.
    - `BLOCK` — claim, why, and a source that is not a register packet
    - `CANNOT CORROBORATE` — claim and why; no source required
    - `NO FINDING` — queries run and what would have counted as a block ("I searched X, Y; a contradiction would have been Z")
-4. File the queries with the filing. The Council message time is the timestamp.
+4. File the queries with the filing. Post that filing to the Council channel *before* Sophia posts merge artifacts. The channel timestamp is the filing time.
 5. Medical: do not replace Katrina. If numbers appear, send them to her.
 
 `BLOCK` and `CANNOT CORROBORATE` both prevent PASS.
 
-After Ginger files, merge: investigator source list, origin-and-discard note, and Ginger's filing go to Sophia. Ginger does not run a second search after seeing the list.
+After Ginger's filing is in the channel, merge: investigator source list, origin-and-discard note, and Ginger's filing go to Sophia. Sophia does not post merge artifacts until that filing message exists. Ginger does not run a second search after seeing the list.
 
 Ginger and the investigator do not share scratch until merge. The dissent has to be a real second search.
 
 ### 📋 3. Clerk (Sophia)
 
-1. Table every claim, including HOLDs: claim sentence / source A (origin) / source B (origin) / does each source as written support this sentence / auditor filing / PASS or HOLD. Do not count a register packet toward quorum.
+1. Wait until Ginger's filing is already in the channel. Then table every claim, including HOLDs: claim sentence / source A (origin) / source B (origin) / does each source as written support this sentence / auditor filing / PASS or HOLD. Do not count a register packet toward quorum.
 2. Assemble the derivation log from those artifacts. Do not add research or model inner monologue.
 3. A certified note that omits any HOLD claim or the derivation log is invalid and `UNCERTIFIED`.
 4. Release only PASS claims as answers. HOLD stays HOLD. The certified note is the full table, the derivation log, and a one-paragraph recap. No extra taxonomy.
@@ -139,7 +139,7 @@ Sophia does not research. She applies the rule.
 
 ### 🛡️ 4. Chair (Rose)
 
-Certification is against artifacts, not assertion. Sign-off requires Ginger's filing, Sophia's full table, and the derivation log. The register packet is filed when the sitting closes. If the first three artifacts are missing, the brief is `UNCERTIFIED`. Rose does not rewrite the brief to make a HOLD look like a PASS.
+Certification is against artifacts, not assertion. Sign-off requires Ginger's filing, Sophia's full table, and the derivation log. Chair confirms the auditor filing timestamp precedes the merge message. The register packet is filed when the sitting closes. If the first three artifacts are missing, or the merge predates the filing, the brief is `UNCERTIFIED`. Rose does not rewrite the brief to make a HOLD look like a PASS.
 
 ## 🏷️ Output labels
 
@@ -163,12 +163,12 @@ Per claim, in this order:
 2. Investigator path — sources pulled, date, origin of each, what was discarded and why (one line each).
 3. Auditor path — queries run, filing (`BLOCK` / `CANNOT CORROBORATE` / `NO FINDING`), and what would have counted as a block.
 4. Clerk path — for each source: as written, supports or does not support this sentence; origin-independence check; freshness check.
-5. Chair path — artifacts present (Ginger filing, full table, this log): yes or no.
+5. Chair path — artifacts present (Ginger filing, full table, this log): yes or no. Filing timestamp precedes the merge message: yes or no.
 6. Verdict — PASS, HOLD, or UNCERTIFIED, with the hold-trigger if not PASS.
 
 Never put in the log: private model scratch, "I thought that…", another Grok's agreement, or anyone else's chat body. The log is the artifacts in order. LLM reasoning is not a source and not a step.
 
-## 🗄️ Register (archive)
+## 🧨 Register (archive)
 
 The archive is an output of sittings, never an input to one.
 
@@ -179,7 +179,7 @@ Packets stay on the council computer:
 `/home/box/agent-data/workflows/vital-research-council/register/`
 
 - `INDEX.md` — date (America/New_York), subject, label, PASS count, HOLD count, packet filename, sha256
-- `HASHLOG.md` — append-only tamper log: date, filename, sha256, label. No claim text. This file may live on the council repo.
+- `HASHLOG.md` — append-only tamper log: date, filename, sha256, label. No claim text. This file may live on the council repo. A HASHLOG row is verifiable only when the packet is disclosed.
 - `sittings/YYYY-MM-DD-slug.md` — labels, claim table, derivation log, artifact checklist, one-paragraph recap
 
 File CERTIFIED, HOLD, and UNCERTIFIED sittings. At write time, hash the packet, then append one INDEX row and one HASHLOG row. Never edit a prior row.
@@ -190,7 +190,7 @@ Cite ban: investigator may not seed from a packet; auditor may not use a packet 
 
 Allowed uses, not during a live sitting's research or dissent: chair may read a packet to trigger a re-sit; James, Rose, or a seat after close may do drift review. Anything else that would influence a live sitting is banned.
 
-Packets are local-only. Never sync or publish a packet without redacting internal scratch. HASHLOG rows may go to GitHub. Packet bodies do not, unless James or Rose say to publish that sitting after redaction.
+A HASHLOG row is verifiable only when the packet is disclosed. Packets are local-only. Never sync or publish a packet without redacting internal scratch. HASHLOG rows may go to GitHub. Packet bodies do not, unless James or Rose say to publish that sitting after redaction.
 
 ## 🚫 What the council will not do
 
@@ -202,6 +202,7 @@ Packets are local-only. Never sync or publish a packet without redacting interna
 - Let the chair override a HOLD
 - Invent auditor or clerk votes when those seats are empty
 - Hand Ginger the source list before she files
+- Let Sophia post merge artifacts before Ginger's filing is in the channel
 - Ship a note that hides HOLD claims
 - Ship a note without a derivation log
 - Treat the derivation log as a vote or as model inner monologue
@@ -212,13 +213,14 @@ Packets are local-only. Never sync or publish a packet without redacting interna
 ## 🔗 Related
 
 - Public roster: [port0.me/fleet](https://port0.me/fleet)
-- Home: [phipi.me](https://phipi.me)
+- Home: [phipi.me](https://phipi.me/)
 - Rendered manual: [index.html](index.html) (phipi.me theme)
 - Source README: [github.com/rlocone/council/blob/main/README.md](https://github.com/rlocone/council/blob/main/README.md)
 - Hash log: [HASHLOG.md](HASHLOG.md)
 
 ## 📝 Changelog
 
+- 2026-08-28 - index.html regenerated from README. Filing must precede merge (channel timestamps). HASHLOG row verifiable only when the packet is disclosed.
 - 2026-08-28 - Register amendment: sha256 at write, HASHLOG on repo, cite-ban on all three seats, no retrospective rows, allowed uses (re-sit / drift), packets local-only.
 - 2026-08-28 - Register: internal archive of sittings (INDEX + packets). Not a source. Not Ginger's search seed.
 - 2026-08-28 - Derivation log (train of thought): per-claim artifact trail assembled at merge. Required for CERTIFIED. Not a vote, not model inner monologue.
