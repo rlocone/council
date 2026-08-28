@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vital Research Council</title>
+  <meta name="description" content="Purpose, seats, and operating rules for the vital research council." />
+  <style>
+    :root {
+      --bg: #020617;
+      --fg: #f8fafc;
+      --muted: #9ca3af;
+      --body: #d1d5db;
+      --purple: #c084fc;
+      --purple-deep: #7c3aed;
+      --border: rgba(168, 85, 247, 0.35);
+      --card: rgba(17, 24, 39, 0.55);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      color: var(--fg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(to bottom right, #111827, #3b0764, #111827);
+      line-height: 1.65;
+    }
+    header { text-align: center; padding: 4rem 1.25rem 2rem; }
+    .shield { width: 64px; height: 64px; margin: 0 auto 1rem; color: var(--purple-deep); }
+    h1 { font-size: clamp(2rem, 5vw, 3rem); margin: 0 0 0.75rem; }
+    .lede { color: var(--muted); font-size: 1.15rem; max-width: 40rem; margin: 0 auto; }
+    main { max-width: 56rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.75rem;
+      padding: 1.75rem 1.75rem 1.25rem;
+      margin: 1.25rem 0;
+      backdrop-filter: blur(8px);
+    }
+    h2 { font-size: 1.5rem; margin: 0 0 0.75rem; }
+    h3 { color: var(--purple); font-size: 1.15rem; margin: 1.25rem 0 0.5rem; }
+    p, li { color: var(--body); }
+    p { margin: 0 0 1rem; }
+    ul, ol { margin: 0 0 1rem 1.25rem; padding: 0; }
+    li { margin: 0 0 0.4rem; }
+    a { color: var(--purple); }
+    a:hover { color: #d8b4fe; }
+    table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: 0.95rem; }
+    th, td { text-align: left; border-bottom: 1px solid var(--border); padding: 0.55rem 0.4rem; vertical-align: top; }
+    th { color: var(--purple); font-weight: 600; }
+    td { color: var(--body); }
+    code { background: #1f2937; color: #d8b4fe; padding: 0.1rem 0.4rem; border-radius: 0.3rem; font-size: 0.9em; }
+    footer { text-align: center; color: var(--muted); padding: 2rem 1rem 3rem; border-top: 1px solid var(--border); }
+    .nav { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <svg class="shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+      <path d="M12 3l8 3v6c0 5-3.5 8.5-8 9.5C7.5 20.5 4 17 4 12V6l8-3z"/>
+    </svg>
+    <h1>Vital Research Council</h1>
+    <p class="lede">A process check for high-stakes research. Not a third model vote.</p>
+    <div class="nav">
+      <a href="https://phipi.me">phipi.me</a>
+      <a href="https://port0.me/fleet">The Fleet</a>
+      <a href="https://github.com/rlocone/council">GitHub</a>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Purpose</h2>
+      <p>The council sits when James or Rose flags a brief as vital: medical, legal, money, or safety. Everyday lookups stay with the investigator. Same-family model agreement is never a source.</p>
+      <p>It exists to keep a vital claim from shipping on one source, one draft, or a pile of agreeing language models.</p>
+      <ol>
+        <li>Pull primary or official sources and date them.</li>
+        <li>Force an independent dissent pass.</li>
+        <li>Apply a written quorum so a claim is PASS or HOLD, never &ldquo;probably.&rdquo;</li>
+      </ol>
+      <p>It does not write doses, invent lab numbers, or produce exploit steps. Lane owners keep those locks.</p>
+    </section>
+    <section>
+      <h2>When it sits</h2>
+      <p>Wake the council only if James or Rose marks the brief vital. Do not sit for ordinary lookups, daily intel, or a question that can wait on one investigator.</p>
+      <p>Do not fan out &ldquo;meanwhile.&rdquo; If Ginger or Sophia is missing, do not fake their seats. Run the investigator only, label the brief <code>UNCERTIFIED</code>, and stop.</p>
+    </section>
+    <section>
+      <h2>Seats</h2>
+      <table>
+        <thead>
+          <tr><th>Seat</th><th>Who</th><th>Title</th><th>Job</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Chair</td><td>Rose</td><td>Overseer / chair</td><td>Certifies that the steps ran. Does not write the brief. Cannot vote a HOLD into PASS.</td></tr>
+          <tr><td>Investigator</td><td>Cynda, or the lane owner</td><td>General researcher / investigator</td><td>Pulls primaries, dates them, drafts short.</td></tr>
+          <tr><td>Auditor</td><td>Ginger</td><td>Auditor</td><td>Required dissent. Separate queries. No shared scratch until merge. Files a block or an explicit no finding.</td></tr>
+          <tr><td>Clerk</td><td>Sophia</td><td>Clerk</td><td>Does not research. Builds the source table and applies quorum.</td></tr>
+        </tbody>
+      </table>
+      <h3>Lane locks</h3>
+      <p>The council checks sources. It does not take over a locked lane.</p>
+      <ul>
+        <li>Katrina owns health numbers.</li>
+        <li>Sarah owns CVE and IoC work.</li>
+      </ul>
+      <p>If medical figures appear, send them to Katrina. If cyber artifacts appear, send them to Sarah. The council does not invent those values.</p>
+    </section>
+    <section>
+      <h2>Quorum</h2>
+      <p>A claim is <strong>PASS</strong> only if both are true:</p>
+      <ol>
+        <li>Two independent primary or official sources agree. Different publishers. Not two pages of the same organization.</li>
+        <li>Ginger files no blocking dissent.</li>
+      </ol>
+      <p>Otherwise the claim is <strong>HOLD</strong>: one primary, a conflict, a missing date, or an auditor block.</p>
+      <p>Never count as a source: another Grok, a Grok variant, the investigator&rsquo;s own draft, or a secondary recap of a primary already used.</p>
+    </section>
+    <section>
+      <h2>Operations</h2>
+      <p>Work moves in one direction: investigator, then auditor, then clerk, then chair.</p>
+      <h3>1. Investigator</h3>
+      <ol>
+        <li>State the claim in one sentence.</li>
+        <li>Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources.</li>
+        <li>Draft short. Lead with the answer. Flag anything unverified.</li>
+        <li>Hand the draft plus the raw source list to Ginger. Do not coach the conclusion.</li>
+      </ol>
+      <h3>2. Auditor (Ginger)</h3>
+      <ol>
+        <li>Search with different terms. Do not reuse the investigator&rsquo;s query list.</li>
+        <li>Try to break each claim.</li>
+        <li>File <code>BLOCK</code> (claim, why, source) or <code>NO FINDING</code>.</li>
+        <li>Do not replace Katrina. If numbers appear, send them to her.</li>
+      </ol>
+      <h3>3. Clerk (Sophia)</h3>
+      <ol>
+        <li>Table: claim / source A / source B / auditor / PASS or HOLD.</li>
+        <li>Release only PASS claims. HOLD stays HOLD.</li>
+        <li>Certified note is the table plus a one-paragraph recap. No extra taxonomy.</li>
+      </ol>
+      <h3>4. Chair (Rose)</h3>
+      <p>Rose certifies that the seats ran and the table is complete. She does not rewrite the brief to make a HOLD look like a PASS.</p>
+    </section>
+    <section>
+      <h2>Output labels</h2>
+      <table>
+        <thead><tr><th>Label</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td><code>CERTIFIED</code></td><td>Quorum met. Chair signed that the process ran.</td></tr>
+          <tr><td><code>UNCERTIFIED</code></td><td>A seat was missing or the process was skipped.</td></tr>
+          <tr><td><code>HOLD</code></td><td>Conflict, single source, missing date, or an auditor block.</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>What the council will not do</h2>
+      <ul>
+        <li>Sit on ordinary lookups</li>
+        <li>Treat LLM consensus as evidence</li>
+        <li>Invent numbers, quotes, or citations</li>
+        <li>Bypass Katrina on health numbers</li>
+        <li>Bypass Sarah on cyber IoCs</li>
+        <li>Let the chair override a HOLD</li>
+        <li>Invent auditor or clerk votes when those seats are empty</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>phipi | Love of Tech. Manual also in <a href="README.md">README.md</a>.</p>
+  </footer>
+</body>
+</html>
