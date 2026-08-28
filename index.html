@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
   <title>Vital Research Council</title>
   <meta name="description" content="Purpose, seats, and operating rules for the vital research council." />
   <style>
@@ -27,8 +28,16 @@
         linear-gradient(160deg, #0b0418 0%, #3b0764 42%, #0f172a 100%);
       line-height: 1.65;
     }
-    header { text-align: center; padding: 3.5rem 1.25rem 1.5rem; }
-    .shield { width: 72px; height: 72px; margin: 0 auto 0.75rem; color: var(--purple); filter: drop-shadow(0 0 18px rgba(168,85,247,0.8)); }
+    header {
+      text-align: center;
+      padding: 3.5rem 1.25rem 1.5rem;
+    }
+    .shield {
+      width: 72px; height: 72px;
+      margin: 0 auto 0.75rem;
+      color: var(--purple);
+      filter: drop-shadow(0 0 18px rgba(168,85,247,0.8));
+    }
     h1 {
       font-size: clamp(2.2rem, 6vw, 3.4rem);
       margin: 0 0 0.6rem;
@@ -37,8 +46,19 @@
       background-clip: text;
       color: transparent;
     }
-    .lede { color: #f5d0fe; font-size: 1.2rem; max-width: 42rem; margin: 0 auto 1rem; }
-    .tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin: 1rem 0 0.25rem; }
+    .lede {
+      color: #f5d0fe;
+      font-size: 1.2rem;
+      max-width: 42rem;
+      margin: 0 auto 1rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1rem 0 0.25rem;
+    }
     .tags span {
       background: rgba(168,85,247,0.22);
       border: 1px solid rgba(192,132,252,0.55);
@@ -48,7 +68,14 @@
       font-size: 0.85rem;
       font-weight: 600;
     }
-    .nav { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 1.1rem; font-size: 0.95rem; }
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1.1rem;
+      font-size: 0.95rem;
+    }
     a { color: #67e8f9; }
     a:hover { color: #fde047; }
     main { max-width: 64rem; margin: 0 auto; padding: 0 1.25rem 5rem; }
@@ -60,18 +87,37 @@
       padding: 1.75rem 1.75rem 1.25rem;
       margin: 1.25rem 0;
     }
-    h2 { font-size: 1.6rem; margin: 0 0 0.75rem; color: #fde68a; }
+    h2 {
+      font-size: 1.6rem;
+      margin: 0 0 0.75rem;
+      color: #fde68a;
+    }
     h3 { color: #d8b4fe; font-size: 1.15rem; margin: 1.25rem 0 0.5rem; }
     p, li { color: #f3e8ff; }
     p { margin: 0 0 1rem; }
     ul, ol { margin: 0 0 1rem 1.25rem; padding: 0; }
     li { margin: 0 0 0.4rem; }
     table { width: 100%; border-collapse: collapse; margin: 0 0 1rem; font-size: 0.95rem; }
-    th, td { text-align: left; border-bottom: 1px solid rgba(192,132,252,0.35); padding: 0.55rem 0.4rem; vertical-align: top; }
+    th, td {
+      text-align: left;
+      border-bottom: 1px solid rgba(192,132,252,0.35);
+      padding: 0.55rem 0.4rem;
+      vertical-align: top;
+    }
     th { color: #67e8f9; }
     td { color: #f3e8ff; }
-    code { background: #3b0764; color: #fde68a; padding: 0.1rem 0.4rem; border-radius: 0.3rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1rem 0 0.25rem; }
+    code {
+      background: #3b0764;
+      color: #fde68a;
+      padding: 0.1rem 0.4rem;
+      border-radius: 0.3rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin: 1rem 0 0.25rem;
+    }
     .card {
       text-align: center;
       background: rgba(15, 6, 32, 0.85);
@@ -81,14 +127,23 @@
       padding: 1rem 0.75rem 1.1rem;
     }
     .card img {
-      width: 120px; height: 120px; object-fit: cover; border-radius: 999px;
-      border: 3px solid var(--glow); display: block; margin: 0 auto 0.55rem;
+      width: 120px; height: 120px;
+      object-fit: cover;
+      border-radius: 999px;
+      border: 3px solid var(--glow);
+      display: block;
+      margin: 0 auto 0.55rem;
     }
     .card .emoji { font-size: 1.4rem; }
     .card h3 { margin: 0.2rem 0 0; color: #fff; }
     .card .seat { color: var(--glow); font-weight: 700; margin: 0.15rem 0 0; }
     .card .title { color: #e9d5ff; font-size: 0.9rem; margin: 0.1rem 0 0; }
-    footer { text-align: center; color: #e9d5ff; padding: 2rem 1rem 3rem; border-top: 1px solid rgba(192,132,252,0.4); }
+    footer {
+      text-align: center;
+      color: #e9d5ff;
+      padding: 2rem 1rem 3rem;
+      border-top: 1px solid rgba(192,132,252,0.4);
+    }
   </style>
 </head>
 <body>
@@ -117,28 +172,28 @@
       <h2>👤 Seats</h2>
       <div class="grid">
       <article class="card" style="--glow:#c084fc">
-        <img src="avatars/rose.jpg" alt="Rose, Chair" />
+        <img src="avatars/rose.jpg" alt="Rose, Chair" loading="lazy" />
         <div class="emoji">🛡️</div>
         <h3>Rose</h3>
         <p class="seat">Chair</p>
         <p class="title">Overseer</p>
       </article>
       <article class="card" style="--glow:#22d3ee">
-        <img src="avatars/cynda.jpg" alt="Cynda, Investigator" />
+        <img src="avatars/cynda.jpg" alt="Cynda, Investigator" loading="lazy" />
         <div class="emoji">🔎</div>
         <h3>Cynda</h3>
         <p class="seat">Investigator</p>
         <p class="title">General researcher</p>
       </article>
       <article class="card" style="--glow:#fbbf24">
-        <img src="avatars/ginger.jpg" alt="Ginger, Auditor" />
+        <img src="avatars/ginger.jpg" alt="Ginger, Auditor" loading="lazy" />
         <div class="emoji">⚖️</div>
         <h3>Ginger</h3>
         <p class="seat">Auditor</p>
         <p class="title">Required dissent</p>
       </article>
       <article class="card" style="--glow:#f472b6">
-        <img src="avatars/sophia.jpg" alt="Sophia, Clerk" />
+        <img src="avatars/sophia.jpg" alt="Sophia, Clerk" loading="lazy" />
         <div class="emoji">📋</div>
         <h3>Sophia</h3>
         <p class="seat">Clerk</p>
@@ -148,18 +203,18 @@
     </section>
     <section>
       <h2>🎯 Purpose</h2>
-      <p>The council sits when James or Rose flags a brief as vital: medical, legal, money, or safety. Everyday lookups stay with the investigator. Same-family model agreement is never a source.</p>
+      <p>The council sits when James or Rose flags a brief as vital, or when any seat escalates a medical, legal, money, or safety claim that is about to ship. Everyday lookups stay with the investigator. Same-family model agreement is never a source.</p>
       <p>It exists to keep a vital claim from shipping on one source, one draft, or a pile of agreeing language models.</p>
       <ol>
         <li>📥 Pull primary or official sources and date them.</li>
-        <li>🧨 Force an independent dissent pass.</li>
+        <li>💣 Force an independent dissent pass.</li>
         <li>✅ Apply a written quorum so a claim is PASS or HOLD, never &ldquo;probably.&rdquo;</li>
       </ol>
       <p>It does not write doses, invent lab numbers, or produce exploit steps. Lane owners keep those locks.</p>
     </section>
     <section>
       <h2>⏰ When it sits</h2>
-      <p>Wake the council only if James or Rose marks the brief vital. Do not sit for ordinary lookups, daily intel, or a question that can wait on one investigator.</p>
+      <p>James or Rose can flag a brief vital. Any seat that sees a medical, legal, money, or safety claim about to ship must escalate: stop the ordinary path and sit the council. That is not a fan-out, and it is not a wake on every passing mention.</p>
       <p>Do not fan out &ldquo;meanwhile.&rdquo; If Ginger or Sophia is missing, do not fake their seats. Run the investigator only, label the brief <code>UNCERTIFIED</code>, and stop.</p>
     </section>
     <section>
@@ -172,48 +227,72 @@
     </section>
     <section>
       <h2>🗳️ Quorum</h2>
-      <p>A claim is <strong>PASS</strong> only if both are true:</p>
+      <p>A claim is <strong>PASS</strong> only if all of these are true:</p>
       <ol>
-        <li>Two independent primary or official sources agree. Different publishers. Not two pages of the same organization.</li>
-        <li>Ginger files no blocking dissent.</li>
+        <li>Two independent primary or official sources agree on the exact claim sentence. Different publishers. Not two pages of the same organization.</li>
+        <li>Each source traces to an independent origin. Two reprints of one wire, press release, or letter count as one source.</li>
+        <li>Ginger files no <code>BLOCK</code> and no <code>CANNOT CORROBORATE</code>.</li>
       </ol>
-      <p>Otherwise the claim is <strong>HOLD</strong>: one primary, a conflict, a missing date, or an auditor block.</p>
-      <p>Never count as a source: another Grok, a Grok variant, the investigator&rsquo;s own draft, or a secondary recap of a primary already used.</p>
+      <p>Otherwise the claim is <strong>HOLD</strong>: one primary, same-upstream pair, a conflict, a missing date, a stale source without a currency check, a block, or cannot-corroborate.</p>
+      <p>Never count as a source: another Grok, a Grok variant, the investigator&rsquo;s own draft, a secondary recap of a primary already used, or a prior register packet.</p>
+      <p>Lane-owner data (Katrina health numbers, Sarah CVE/IoC) counts as one source. It still needs a second independent primary.</p>
+      <p>For medical, regulatory, or living legal status, a source older than 5 years needs an explicit currency check. Historical facts may use contemporaneous records.</p>
     </section>
     <section>
       <h2>⚙️ Operations</h2>
       <p>Work moves in one direction: investigator, then auditor, then clerk, then chair.</p>
       <h3>🔎 1. Investigator</h3>
       <ol>
-        <li>State the claim in one sentence.</li>
-        <li>Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources.</li>
+        <li>State each claim in one sentence.</li>
+        <li>Pull primaries. Date each. Prefer official, government, filing, or manufacturer sources. Trace origin.</li>
         <li>Draft short. Lead with the answer. Flag anything unverified.</li>
-        <li>Hand the draft plus the raw source list to Ginger. Do not coach the conclusion.</li>
+        <li>Keep a private origin-and-discard note for merge. Do not show it to Ginger.</li>
+        <li>Hand Ginger the claim sentences and the draft only. Withhold the source list until merge. Do not coach the conclusion.</li>
       </ol>
       <h3>⚖️ 2. Auditor (Ginger)</h3>
       <ol>
-        <li>Search with different terms. Do not reuse the investigator&rsquo;s query list.</li>
+        <li>Search with different terms. Do not reuse the investigator&rsquo;s query list. Do not see the source list until after you file. Do not read prior register packets as search seed.</li>
         <li>Try to break each claim.</li>
-        <li>File <code>BLOCK</code> (claim, why, source) or <code>NO FINDING</code>.</li>
+        <li>File <code>BLOCK</code> (claim, why, source), <code>CANNOT CORROBORATE</code> (claim, why; no source required), or <code>NO FINDING</code> (queries run plus what would have counted as a block).</li>
         <li>Do not replace Katrina. If numbers appear, send them to her.</li>
       </ol>
       <h3>📋 3. Clerk (Sophia)</h3>
       <ol>
-        <li>Table: claim / source A / source B / auditor / PASS or HOLD.</li>
-        <li>Release only PASS claims. HOLD stays HOLD.</li>
-        <li>Certified note is the table plus a one-paragraph recap. No extra taxonomy.</li>
+        <li>Table every claim, including HOLDs: claim sentence / source A (origin) / source B (origin) / sentence support / auditor / PASS or HOLD.</li>
+        <li>Assemble the derivation log from artifacts. Do not add research or inner monologue.</li>
+        <li>A note that omits a HOLD claim or the derivation log is invalid and <code>UNCERTIFIED</code>.</li>
+        <li>Release only PASS claims as answers. HOLD stays HOLD. Certified note is the full table, the derivation log, and a one-paragraph recap.</li>
       </ol>
       <h3>🛡️ 4. Chair (Rose)</h3>
-      <p>Rose certifies that the seats ran and the table is complete. She does not rewrite the brief to make a HOLD look like a PASS.</p>
+      <p>Rose certifies against artifacts: Ginger&rsquo;s filing, Sophia&rsquo;s full table, and the derivation log. Missing any artifact is <code>UNCERTIFIED</code>. She does not rewrite the brief to make a HOLD look like a PASS.</p>
+    </section>
+    <section>
+      <h2>🧠 Derivation log</h2>
+      <p>How a sitting is shown, not how a model felt. Read it if you are going to rely on the verdict. Assembled at merge, after Ginger files. Not a fifth vote.</p>
+      <ol>
+        <li>Claim — the exact sentence.</li>
+        <li>Investigator path — sources, dates, origin of each, what was discarded and why.</li>
+        <li>Auditor path — queries, filing, what would have counted as a block.</li>
+        <li>Clerk path — does each source as written support this sentence; origin and freshness checks.</li>
+        <li>Chair path — artifacts present: yes or no.</li>
+        <li>Verdict — PASS, HOLD, or UNCERTIFIED.</li>
+      </ol>
+      <p>No private model scratch. No &ldquo;I thought that.&rdquo; LLM reasoning is not a source and not a step.</p>
+    </section>
+    <section>
+      <h2>🗄️ Register</h2>
+      <p>Internal archive of sittings. Not a source. Not posted. Not Ginger&rsquo;s search seed (that is poisoning the well).</p>
+      <p>File CERTIFIED, HOLD, and UNCERTIFIED packets after the sitting closes. A prior packet does not satisfy quorum and does not refresh a stale label.</p>
+      <p>Do not put health numbers, street addresses, tokens, or chat bodies in a packet. Do not publish unless James or Rose say to.</p>
     </section>
     <section>
       <h2>🏷️ Output labels</h2>
       <table>
         <thead><tr><th>Label</th><th>Meaning</th></tr></thead>
         <tbody>
-          <tr><td><code>CERTIFIED</code></td><td>Quorum met. Chair signed that the process ran.</td></tr>
-          <tr><td><code>UNCERTIFIED</code></td><td>A seat was missing or the process was skipped.</td></tr>
-          <tr><td><code>HOLD</code></td><td>Conflict, single source, missing date, or an auditor block.</td></tr>
+          <tr><td><code>CERTIFIED (YYYY-MM-DD)</code></td><td>Quorum met. Chair signed against artifacts. Date is America/New_York. Re-sit if a source goes stale or a link dies.</td></tr>
+          <tr><td><code>UNCERTIFIED</code></td><td>A seat was missing, process skipped, HOLD claims omitted, derivation log missing, or artifacts missing.</td></tr>
+          <tr><td><code>HOLD</code></td><td>Conflict, single source, same-upstream pair, missing date, stale source, block, or cannot-corroborate.</td></tr>
         </tbody>
       </table>
     </section>
@@ -227,11 +306,15 @@
         <li>Bypass Sarah on cyber IoCs</li>
         <li>Let the chair override a HOLD</li>
         <li>Invent auditor or clerk votes when those seats are empty</li>
+        <li>Ship a note without a derivation log</li>
+        <li>Treat the derivation log as a vote or as model inner monologue</li>
+        <li>Cite a register packet as a source</li>
+        <li>Hand Ginger a prior packet as search seed</li>
       </ul>
     </section>
   </main>
   <footer>
-    <p>💜 phipi | Love of Tech · Manual also in <a href="README.md">README.md</a></p>
+    <p>💜 phipi | Love of Tech · Manual also in <a href="https://github.com/rlocone/council/blob/main/README.md">README.md</a></p>
     <p>#VitalResearch #Council #Quorum #Dissent #CERTIFIED #phipi</p>
   </footer>
 </body>
