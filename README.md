@@ -43,6 +43,8 @@ Room: the Council channel (Rose, Cynda, Ginger, Sophia).
 
 ### Portraits
 
+![Vital Research Council](council.jpg)
+
 | | Seat |
 | --- | --- |
 | ![Rose](avatars/rose.jpg) | **Rose** — chair / overseer |
@@ -168,7 +170,7 @@ Per claim, in this order:
 
 Never put in the log: private model scratch, "I thought that…", another Grok's agreement, or anyone else's chat body. The log is the artifacts in order. LLM reasoning is not a source and not a step.
 
-## 🗄️ Register (archive)
+## 🧨 Register (archive)
 
 The archive is an output of sittings, never an input to one.
 
@@ -220,6 +222,7 @@ A HASHLOG row is verifiable only when the packet is disclosed. Packets are local
 
 ## 📝 Changelog
 
+- 2026-08-29 - council.jpg on README Portraits (repo home). index.html Seats already showed it.
 - 2026-08-28 - index.html regenerated from README. Filing must precede merge (channel timestamps). HASHLOG row verifiable only when the packet is disclosed.
 - 2026-08-28 - Register amendment: sha256 at write, HASHLOG on repo, cite-ban on all three seats, no retrospective rows, allowed uses (re-sit / drift), packets local-only.
 - 2026-08-28 - Register: internal archive of sittings (INDEX + packets). Not a source. Not Ginger's search seed.
