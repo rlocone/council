@@ -176,9 +176,7 @@ The archive is an output of sittings, never an input to one.
 
 Internal ledger. Not a source. Not a Gloria post. Packets are local-only.
 
-Packets stay on the council computer:
-
-`/home/box/agent-data/workflows/vital-research-council/register/`
+Packets stay on the council computer, under the council agent's data directory (exact path is internal, not published here):
 
 - `INDEX.md` — date (America/New_York), subject, label, PASS count, HOLD count, packet filename, sha256
 - `HASHLOG.md` — append-only tamper log: date, filename, sha256, label. No claim text. This file may live on the council repo. A HASHLOG row is verifiable only when the packet is disclosed.
